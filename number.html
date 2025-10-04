@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number</title>
+</head>
+<body>
+    <script>
+
+        //number
+        document.writeln(100);
+        document.writeln("<br>");
+        document.writeln(100.100)
+
+        //number notation
+
+        //Desimal atau basis 10 yaitu angka 0 - 9
+        document.writeln("<h1>Desimal</h1>")
+        let desimal = 255;
+        document.writeln(desimal);
+
+        /*Hexadesimal basis 16 menggunakan angka 0 - 9 dan huruf A - F
+        A= 10 , B=11 ,C=12 ,D=13 , E=14 ,F=15   */
+
+        document.writeln("<h1>Hexadesimal</h1>")
+        let hexadesimal = 0xFF;
+        /* cara hitung 0xFF = (F × 16¹) + (F × 16⁰)
+        F = 15
+        (15 × 16¹) + (15 × 16⁰)
+        = (15 × 16) + (15 × 1)
+        = 240 + 15
+        = 255 */
+        document.writeln(hexadesimal);
+
+        //Biner basis 2 menggunakan angka 0 dan 1
+        //cara penulisan diawali dengan 0b baru angka binary
+        document.writeln("<h1>Binary</h1>")
+        let binary = 0b10101;
+        /* Cara hitung binary ke desimal
+        setiap digit dibilangan pangka 2 mulai dari paling kanan>
+        | Digit   | 128 | 64 | 32 | 16 | 8  | 4  | 2  | 1  |
+        | ------- | --- | -- | -- | -- | -- | -- | -- | -- |
+        | Pangkat | 2⁷  | 2⁶ | 2⁵ | 2⁴ | 2³ | 2² | 2¹ | 2⁰ |
+
+        soal 0b10101 = 00010101
+        =0x2⁷ + 0x2⁶ + 0x2⁵ + 1x2⁴ + 0x2³ + 1x2² + 0x2¹ + 1x2⁰
+        =0x128 + 0x64 + 0x32 + 1x16 + 0x8 + 1x4 + 0x2 + 1x1
+        =0 + 0 + 0 + 16+ 0 + 4 + 0 + 1
+        = 21
+        
+
+        soal 0b1010 = 00001010
+        soal 0b100010 = 00100010
+        soal 0b01110 = 00001110
+        soal 0b111000 = 00111000
+        */
+        document.writeln(binary);
+
+    </script>
+</body>
+</html>
