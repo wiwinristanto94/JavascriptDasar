@@ -35,7 +35,7 @@
 
         //Biner basis 2 menggunakan angka 0 dan 1
         //cara penulisan diawali dengan 0b baru angka binary
-        document.writeln("<h1>Binary</h1>")
+        document.writeln("<h1>Binary</h1>");
         let binary = 0b10101;
         /* Cara hitung binary ke desimal
         setiap digit dibilangan pangka 2 mulai dari paling kanan>
@@ -43,20 +43,48 @@
         | ------- | --- | -- | -- | -- | -- | -- | -- | -- |
         | Pangkat | 2⁷  | 2⁶ | 2⁵ | 2⁴ | 2³ | 2² | 2¹ | 2⁰ |
 
-        soal 0b10101 = 00010101
+        soal 010101 = 00010101
         =0x2⁷ + 0x2⁶ + 0x2⁵ + 1x2⁴ + 0x2³ + 1x2² + 0x2¹ + 1x2⁰
         =0x128 + 0x64 + 0x32 + 1x16 + 0x8 + 1x4 + 0x2 + 1x1
         =0 + 0 + 0 + 16+ 0 + 4 + 0 + 1
         = 21
         
 
-        soal 0b1010 = 00001010
-        soal 0b100010 = 00100010
-        soal 0b01110 = 00001110
-        soal 0b111000 = 00111000
+        soal 0b1010 = 00001010 = 10
+        soal 0b100010 = 00100010 = 34
+        soal 0b01110 = 00001110 = 14
+        soal 0b111000 = 00111000 = 56
+    
         */
         document.writeln(binary);
 
+        //Octal basis 9 disusun dari angka 0 - 7
+        //cara penulisan diawali dengan 0o baru angka octal
+        // | Digit   | 2097152 | 262144 | 32768 | 4096 |  512 |  64 |  8 | 1  |
+        // | ------- | --- | -- | -- | -- | -- | -- | -- | -- |
+        // | Pangkat | 8⁷  | 8⁶ | 8⁵ | 8⁴ | 8³ | 8² | 8¹ | 8⁰ |
+
+        document.writeln("<h1>Octal</h1>");
+        let octal = 0o17
+        // Soal 0o17 
+        // 1 * 8¹ + 7 * 8⁰
+        // 8 + 7
+        // 15
+        
+
+        //soal 0o77 = 
+        // 7 * 8¹ + 7 * 8⁰
+        // 56 + 7
+        // 63
+
+        //soal 0o123 = 
+        // 83
+
+        //soal 0o2123 = 
+        // 1024 + 64 + 16 + 3
+        // 1107
+
+        document.writeln(octal);
     </script>
 </body>
 </html>
