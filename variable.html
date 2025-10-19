@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <Script>
+        //Variable adala tempat untuk menyimpan data di dalam program
+        //Dengan Menyimpannya, kita bisa mengakses atau mengubah datanya kapanpun hanya dengan menyebutkan namanya
+        
+        document.writeln("<h1> Variable </h1> <br>")
+        var nama = "wiwin" ;
+        var kelas = "1a" ;
+        var umur = 17 ;
+
+        document.writeln("selamat siang perkenalkan nama saya " + nama);
+        document.writeln("<br>");
+        document.writeln ("saya dari kelas " + kelas);
+        document.writeln("<br>");
+        document.writeln("umur saya " + umur + " tahun")
+
+        //Dynamic language artinya tipe data dalam variable bisa berubah kapan saja
+        document.writeln("<h1> Dynamic Language</h1>")
+        document.writeln("<br>");
+
+        var data = "wiwin";
+        //var data dengan type data string
+        document.writeln(data);
+        document.writeln("<br>");
+
+        data = 100;
+        //data dengan type data number
+        document.writeln(data);
+        document.writeln("<br>");
+
+        data = true;
+        //data dengan type data boolean
+        document.writeln(data);
+        document.writeln("<br>");
+
+
+        //Mengubah dan mendeklarasikan variabel
+        var fullName;
+        fullName = "wiwin ristanto";
+        fullName ="gian hawari";
+        fullName="tomas jhon";
+
+        document.writeln(fullName);
+
+
+        //Kata kunci let dan const
+        //Kata kunci let digunakan untuk membaut variable yang nilainya bisa diubah setelah dideklarasinkan(dibuat)
+
+        document.writeln("<h2>Kata Kunci let<h2>");
+            let name = "wiwin";
+            name = "wenwen";
+            document.writeln(name);
+
+        
+        //Kata kunci const digunakan untuk membuat variable yang nilainya tidak boleh diubah (konstan)
+            document.writeln("<h2>Kata Kunci const<h2> <br>");
+            const PI = 3.14;
+
+
+        //contoh soal
+        //soal hitunglah nilai volume balok dengan ukuran panjang 10cm, lebar 7cm, dan tinggi 4cm.
+        //volume balok p x l x t
+
+        //diketahui
+        let p = 10;
+        let l = 7;
+        let t = 4;
+
+        const volBalok = p * l * t;
+        document.writeln("volume balok adalah " + volBalok+"m3")
+
+        //aturan penulisan variable
+        //contoh 
+        let alamat;
+        let _alamat;
+        let $alamat;
+        let alamat_lengkap;
+        let alamat_lengkap_saya;
+
+
+    </Script>
+</body>
+</html>
