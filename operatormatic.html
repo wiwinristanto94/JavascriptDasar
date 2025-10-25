@@ -17,7 +17,7 @@
         let t = 4;
 
         const volBalok = p * l * t;
-        document.writeln("volume balok adalah " + volBalok+"m3")
+        document.writeln("volume balok adalah " + volBalok+"m3");
 
         let a = 10;
         let b = 3;
@@ -27,7 +27,53 @@
         document.writeln("Perkalian: " + (a * b) + "<br>");
         document.writeln("Pembagian: " + (a / b) + "<br>");
         document.writeln("Modulus (sisa bagi): " + (a % b) + "<br>");
-        document.writeln("Pangkat: " + (a ** b));
+        document.writeln("Pangkat: " + (a ** b) +"<br>");
+
+
+        //Kode : Operator Augmented Assigments
+        // contoh :
+        document.writeln(" Operator Augmented Assigments </h1> <br>");
+        document.writeln("<h1>Contoh :</h1>");
+        let result = 10;
+        // result = result + 10;
+        result +=10 ; 
+        // result /= 10;"<br>"
+        // result %=8;
+
+        document.writeln(result);
+
+        //Kode : Operator Unari
+        // contoh :
+        document.writeln(" Operator Unari </h1> <br>");
+        document.writeln("<h1>Contoh :</h1>");
+        let unari = -1;
+        unari--;
+        document.writeln(unari);
+
+        //Kode : Operator /perbandingan
+        // contoh :
+        document.writeln(" Operator Perbandingan </h1> <br>");
+        document.writeln("<h1>Contoh :</h1>");
+
+        // let perbandingan = 5 == "5";
+        // let perbandingan = 5 === "5";
+        // let perbandingan = 10 != 3;
+        let perbandingan = 10 === "10";
+        document.writeln(perbandingan);
+
+
+        //Kode : Operator Logika
+        // contoh :
+        document.writeln(" Operator Logika </h1> <br>");
+        document.writeln("<h1>Contoh :</h1>");
+        const nilaiUjian = 70;
+        const nilaiAbsensi = 78;
+
+        const lulusUjian = nilaiUjian > 75; //false
+        const lulusabsensi = nilaiAbsensi > 75; //true
+
+        const lulus = lulusUjian || lulusabsensi;
+        document.writeln("<p>" + lulus + "</p>")
 
     </script>
 </body>
