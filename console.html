@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console</title>
+</head>
+<body>
+    <script>
+        document.writeln("<h1> Console </h1> <br>")
+        //Console adalah salah satu cara untuk melakukan testing pada program unttuk mengetahui nilai atau value yang kita berikan hasilnya benar atau salah.
+        // Melihat hasil perhitungan sementara.
+        // Mengecek isi variabel.
+        // Melacak kesalahan saat program tidak berjalan seperti yang diharapkan.
+
+        console.info("Hello World");
+
+        const nilaiUjian = 70;
+        const nilaiAbsensi = 78;
+
+        const lulusUjian = nilaiUjian > 75;
+        console.log(lulusUjian);
+        const lulusabsensi = nilaiAbsensi > 75;
+        console.log(lulusabsensi);
+
+        const lulus = lulusUjian && lulusabsensi;
+        console.log(lulus);
+        document.writeln(lulus)
+        
+    </script>
+
+</body>
+</html>
