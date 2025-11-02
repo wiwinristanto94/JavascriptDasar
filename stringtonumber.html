@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String to Number</title>
+</head>
+<body>
+    <script>
+        document.writeln(`<h1> penggunaan String to Number </h1>`);
+
+        document.writeln(`<h1> PparseInt() </h1> <br>`);
+        const value1 = "1"; //string
+        const value2 = 1; //number
+
+        const sum = parseInt(value1) + value2;
+        document.writeln(sum )
+        document.writeln (`<br>`)
+
+
+        document.writeln(`<h1> parseFloat() </h1> <br>`);
+        const berat = "55.7kg";
+        document.writeln (berat +2.3);
+        document.writeln (`<br>`)
+        document.writeln(parseFloat(berat)+2.3);
+
+        document.writeln(`<h1> toString() </h1> <br>`);
+        const angka = 123;
+        const text = angka.toString();
+        document.writeln (`<br>`)
+        document.writeln(text);
+        document.writeln (`<br>`)
+
+        document.writeln(`<h1> NaN (Not a Number) </h1>`);
+        document.writeln(`<p> ${parseInt("selesai")}</p>`); //NaN
+        document.writeln(`<p> ${parseFloat("1.1text")} </p> `); //1.1
+
+        //Number() tidak mentolerir kesalahan data
+        document.writeln(`<p> ${Number("1.1ups")}</p>`); //NaN
+        document.writeln(`<p> ${Number("1x")}</p>`); //NaN
+        document.writeln(`<p> ${Number("bukan number")}</p>`); //NaN
+        document.writeln (`<br>`);
+
+        document.writeln(isNaN(10)); //false
+        document.writeln (`<br>`);
+        document.writeln(isNaN("selesai")); //true
+    </script>
+</body>
+</html>
